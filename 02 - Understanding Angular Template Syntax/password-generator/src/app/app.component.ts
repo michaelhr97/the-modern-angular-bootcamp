@@ -16,10 +16,11 @@ export class AppComponent {
   includeSymbols = false;
   password = '';
 
-  onChangeLength(value: string) {
-    const parsedValue = Number.parseInt(value, 10);
+  onChangeLength(target: EventTarget) {
+    const value = (<HTMLInputElement>target).value;
+    const parsedValue = parseInt(value);
 
-    if (!Number.isNaN(parsedValue)) {
+    if (!isNaN(parsedValue)) {
       this.length = parsedValue;
     }
   }
