@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,6 +9,11 @@ import { CommonModule } from '@angular/common';
   styleUrl: './card.component.css',
 })
 export class CardComponent {
+  @Input() title = '';
+  @Input() username = '';
+  @Input() imageUrl = '';
+  @Input() content = '';
+
   constructor() {}
 
   ngOnInit() {}
