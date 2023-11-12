@@ -5,9 +5,20 @@ import { Pipe, PipeTransform } from '@angular/core';
   standalone: true,
 })
 export class ConvertPipe implements PipeTransform {
-  transform(value: any, ...args: any[]): any {
+  transform(value: any, targetUnits: string): any {
     if (!value) {
       return '';
+    }
+
+    switch (targetUnits) {
+      case 'km':
+        return value * 1.60934;
+      case 'm':
+        return value * 1.60934 * 1000;
+      case 'mm':
+        return value * 1.60934 * 1000 * 1000;
+      default:
+        throw new Error('Target unit not supported');
     }
 
     return value * 1.60934;
