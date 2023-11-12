@@ -53,4 +53,21 @@
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Height</label>
+      <input
+        #inputHeight
+        (input)="onHeightChange(inputHeight.value)"
+        class="form-control"
+      />
+    </div>
+    <div class="col">
+      <label><b>Height</b></label>
+      <div>
+        {{ height | number : "1.1-3" }}
+      </div>
+    </div>
+  </div>
 </div>
