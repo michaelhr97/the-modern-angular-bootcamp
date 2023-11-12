@@ -13,19 +13,19 @@ export class AppComponent {
   images = [
     {
       title: 'At the Beach',
-      url: 'https://unsplash.com/es/fotos/orilla-del-mar-durante-la-hora-dorada-KMn4VEeEPR8',
+      url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2h8ZW58MHx8MHx8fDA%3D',
     },
     {
       title: 'Playing tennis',
-      url: 'https://unsplash.com/es/fotos/hombre-jugando-tenis-WqI-PbYugn4',
+      url: 'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVubmlzfGVufDB8fDB8fHww',
     },
     {
       title: 'Coding',
-      url: 'https://unsplash.com/es/fotos/monitor-que-muestra-programacion-java-OqtafYT5kTw',
+      url: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fHww',
     },
     {
       title: 'Running',
-      url: 'https://unsplash.com/es/fotos/par-de-zapatillas-adidas-azules-y-blancas-XiZ7pRvCzro',
+      url: 'https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cnVubmluZ3xlbnwwfHwwfHx8MA%3D%3D',
     },
   ];
 }
