@@ -12,6 +12,7 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   name = '';
   date = '';
+  amount = '';
 
   onNameChange(value: string) {
     this.name = value;
@@ -19,5 +20,9 @@ export class AppComponent {
 
   onDateChange(value: string) {
     this.date = value;
+  }
+
+  onAmountChange(value: string) {
+    this.amount = value;
   }
 }
