@@ -5,14 +5,33 @@
       <label>Payee Name</label>
       <input
         #inputName
-        (input)="onInput(inputName.value)"
+        (input)="onNameChange(inputName.value)"
         class="form-control"
+        type="text"
       />
     </div>
     <div class="col">
       <label><b>Name</b></label>
       <div>
         {{ name | titlecase }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Payment Date</label>
+      <input
+        #inputDate
+        (input)="onDateChange(inputDate.value)"
+        class="form-control"
+        type="date"
+      />
+    </div>
+    <div class="col">
+      <label><b>Payment Date</b></label>
+      <div>
+        {{ date }}
       </div>
     </div>
   </div>

@@ -11,8 +11,13 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   name = '';
+  date = '';
 
-  onInput(value: string) {
+  onNameChange(value: string) {
     this.name = value;
+  }
+
+  onDateChange(value: string) {
+    this.date = value;
   }
 }
