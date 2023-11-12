@@ -15,6 +15,14 @@ export class AppComponent {
   randomText = lorem.sentence();
   enteredText = '';
 
+  compare(randomLetter: string, enteredLetter: string) {
+    if (!enteredLetter) {
+      return 'pending';
+    }
+
+    return randomLetter === enteredLetter ? 'correct' : 'incorrect';
+  }
+
   onInput(value: string) {
     this.enteredText = value;
   }
