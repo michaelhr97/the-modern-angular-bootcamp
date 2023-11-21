@@ -10,7 +10,8 @@ export class AppComponent {
   constructor(private wikipedia: WikipediaService) {}
 
   onTerm(term: any) {
-    const results = this.wikipedia.serch(term);
-    console.log(results);
+    this.wikipedia.serch(term).subscribe((response) => {
+      console.log(response);
+    });
   }
 }
