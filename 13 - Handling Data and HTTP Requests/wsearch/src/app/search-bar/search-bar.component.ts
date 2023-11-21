@@ -11,4 +11,8 @@ export class SearchBarComponent {
   onInput(target: any) {
     this.term = target.value;
   }
+
+  onFormSubmit(event: Event) {
+    event.preventDefault();
+  }
 }
